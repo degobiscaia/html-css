@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero id consectetur nostrum doloremque esse. Facilis eaque error architecto blanditiis corrupti dolor, ea, deleniti, odit praesentium odio placeat. Expedita, quaerat saepe.</p>
+
+    <ul>
+        <li><a href="paginasExtras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginasExtras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginasExtras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero id consectetur nostrum doloremque esse. Facilis eaque error architecto blanditiis corrupti dolor, ea, deleniti, odit praesentium odio placeat. Expedita, quaerat saepe.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero id consectetur nostrum doloremque esse. Facilis eaque error architecto blanditiis corrupti dolor, ea, deleniti, odit praesentium odio placeat. Expedita, quaerat saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint mollitia consequatur, aut commodi voluptates earum totam libero expedita doloremque repellendus, ut, pariatur voluptas neque. Nobis repellendus consequatur alias nisi!</p><img src='imagens/logo-typescript-150.png'>" name="frame" id="tela">
+        <p>Infelizmente seu navegado não é compativel com isso</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero id consectetur nostrum doloremque esse. Facilis eaque error architecto blanditiis corrupti dolor, ea, deleniti, odit praesentium odio placeat. Expedita, quaerat saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sint mollitia consequatur, aut commodi voluptates earum totam libero expedita doloremque repellendus, ut, pariatur voluptas neque. Nobis repellendus consequatur alias nisi!</p>
+</body>
+</html>
