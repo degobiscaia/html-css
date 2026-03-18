@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forumlario</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--O Label for se relaciona sempre com o id do input, não o name-->
+    <!--
+    Esse é o metodo GET o mais simples, ou para compartilhar so pode enviar 3000bites acima disso da erro, nãu use get para senhas, fotos..
+
+    POST é para dados sensiveis Não aparece na URL, mas não está protegido, da pra ver no inspencionar.
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="#" method="get">
+        <fieldset>
+            <!--
+            Quando se coloca o memso name nos input tipo "radio", ele permite marcar apenas uma opção, isso evita que o usuário selecione mais de uma opção.
+            Todo radio tem apenas uma opção de name
+            -->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked>
+            <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esporteFut" id="iFutebol" checked><label for="iFutebol">Futebol</label><br>
+            <input type="checkbox" name="esporteBas" id="iBasquete"><label for="iBasquete">Basquete</label><br>
+            <input type="checkbox" name="esporteVol" id="iVolei"><label for="iVolei">Vôlei</label><br>
+            <input type="checkbox" name="esporteTen" id="iTennis"><label for="iTennis">Tênis</label><br>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
